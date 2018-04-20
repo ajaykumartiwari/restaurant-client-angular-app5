@@ -1,0 +1,61 @@
+<mat-grid-list cols="3" rows="3" rowHeight="1:1" class="mat-list">
+  <mat-grid-tile *ngFor="let restaurant of restaurants | paginate: { itemsPerPage: 3, currentPage: p}">
+    <mat-card class="example-card card-3 space-between">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ restaurant.name}}</mat-card-title>
+        <mat-card-subtitle>{{ restaurant.cuisines}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://images.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <b style="color:darkcyan">Restaurant Id :</b> {{restaurant.id}}
+        <br>
+        <b style="color:darkcyan">Restaurant Name :</b> {{ restaurant.name}}
+        <mat-card-actions>
+          <button mat-button class="btn-danger" (click)="deleteRestaurants(restaurant)">Delete</button>
+          <button mat-button [routerLink]="['/update',restaurant.id]">Update</button>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <br>
+</mat-grid-list>
+<pagination-controls class="myPagination" previousLabel="previous" nextLabel="next" (pageChange)="p = $event" maxSize="4">
+</pagination-controls>
+<!-- <div class="col-md-8">
+  <h2> Restaurant Details</h2>
+
+  <table class="table table-striped ">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Id</th>
+        <th>Restaurant Name</th>
+        <th>Location</th>
+        <th>cuisines</th>
+        <th>Image Url</th>
+        <th>Reviews</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let restaurant of restaurants">
+        <td class="hidden"></td>
+        <td>{{ restaurant.id}}</td>
+        <td>{{ restaurant.name}}</td>
+        <td>{{ restaurant.location}}</td>
+        <td>{{ restaurant.cuisines}}</td>
+        <td>{{ restaurant.image}}</td>
+        <td>{{ restaurant.review}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteRestaurants(restaurant)"> Delete </button>
+        </td>
+        <td><button class="btn btn-success" (click)="updateRestaurants(restaurant)"> Update </button></td>
+        <td>
+          <button class="btn btn-warning" routerLink="/update/id">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

@@ -1,0 +1,38 @@
+<h2 class="text-center"> Update Restaurant</h2> <hr/>
+<div class="col-md-7 main">
+    <form >
+        <div class="form-group">
+            <label for="id">Restaurant Id:</label>
+            <input [(ngModel)]="restaurant.id" placeholder="Restaurant id" name="id" class="form-control" #id>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Restaurant Name:</label>
+            <input [(ngModel)]="restaurant.name" placeholder="Restaurant Name" name="name" class="form-control" #name>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location: {{restaurant.location}}</label>
+            <input [(ngModel)]="restaurant.location" placeholder="Enter Address" name="location" class="form-control" #location>
+        </div>
+
+        <div class="form-group">
+            <label for="cuisines">Cuisines:</label>
+            <input [(ngModel)]="restaurant.cuisines" placeholder="Enter Cuisines" name="cuisines" class="form-control" #cuisines>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image Url:</label>
+            <input [(ngModel)]="restaurant.image" placeholder="Enter imageUrl" name="image" class="form-control" id="image">
+        </div>
+        <div class="form-group">
+            <label for="review">Review:</label>
+            <input [(ngModel)]="restaurant.review" placeholder="Enter Review" name="review" class="form-control" id="review">
+        </div>
+        <div>
+            <button class="btn btn-success" (click)="updateRestaurants(restaurant)" routerLink="/restaurants">  Update  </button>
+        </div>
+        
+    </form>
+    <br/>
+</div>

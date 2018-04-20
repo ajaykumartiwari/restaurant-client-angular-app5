@@ -1,0 +1,62 @@
+.link {
+  align-content: center;
+  text-align: center;
+  padding-top: 2%;
+  color: aqua;
+  background-color: cadetblue;
+  margin-top: 2%;
+}
+
+mat-toolbar {
+  width: 100%;
+}
+
+.example-card {
+  max-width: 400px;
+  box-shadow: 10px black;
+}
+
+.example-header-image {
+  background-image: url("https://images.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.color {
+  background-color: #2eb8b8;
+}
+.mat-icon {
+  padding-left: 20px;
+  color: white;
+}
+
+
+
+.example-tooltip-host {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .example-select {
+    margin: 0 10px;
+  }
+
+
+  .footer {
+    position: fixed;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#2eb8b8;
+    }
+    @media screen and (max-width: 360px) {
+      .footer {
+        padding: 0%;
+      }
+    }

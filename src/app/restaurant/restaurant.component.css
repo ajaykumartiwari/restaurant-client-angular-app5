@@ -1,0 +1,43 @@
+div {
+  margin-left: 15%;
+}
+table {
+  background-color: powderblue;
+}
+
+.example-card {
+  max-width: 300px;
+  box-shadow: 30px black;
+}
+
+.example-header-image {
+  background-image: url("https://images.pexels.com/photos/51115/restaurant-wine-glasses-served-51115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+}
+mat-grid-tile {
+  background: lightblue;
+  max-width: 300px;
+  margin-left: 2%;
+}
+.color {
+  background-color: #2eb8b8;
+}
+.mat-icon {
+  padding-left: 20px;
+  color: white;
+}
+
+.mat-list {
+  margin: auto;
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  border-radius: 2px;
+}
+
+pagination-controls{
+  float: right;
+  margin-right: 10%;
+}

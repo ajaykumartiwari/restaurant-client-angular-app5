@@ -1,0 +1,47 @@
+<mat-toolbar class="color">
+  <mat-toolbar-row class="example-tooltip-host" matTooltip="Tooltip!">
+    <span style="margin-right: 20px "><b>Restaurantzz!</b></span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon" routerLink="/add" data-toggle="tooltip" title="Add New Restaurant!">note_add</mat-icon>
+    <mat-icon class="example-icon" routerLink="/restaurants" data-toggle="tooltip" title="Favorite Restaurant!">favorite</mat-icon>
+    <mat-icon class="example-icon" routerLink="/login" data-toggle="tooltip" title="Login">account_circle</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div>
+  <br>
+  <router-outlet></router-outlet>
+</div>
+<br>
+<!-- Login massage Display-->
+
+<!-- <div class="jumbotron color">
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h3>Display Login Message</h3>
+      <alert></alert>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <mat-toolbar class = "jumbotron color">
+    <mat-toolbar-row class="example-tooltip-host">
+      <span class = "example-spacer"></span>
+      <div class="col-sm-6 col-sm-offset-2">
+          <h3>Login Message</h3>
+          <alert></alert>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Restaurant App footer</p>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+﻿<div class="col-md-6 col-md-offset-3 login">
+    <h2>Login</h2>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !id.valid }">
+            <label for="id">Restaurant Id</label>
+            <input type="text" class="form-control" name="id" [(ngModel)]="model.id" #id="ngModel" required />
+            <div *ngIf="f.submitted && !id.valid" class="help-block">Id is required</div>
+        </div>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !name.valid }">
+            <label for="name">Restaurant Name</label>
+            <input type="name" class="form-control" name="name" [(ngModel)]="model.name" #name="ngModel" required />
+            <div *ngIf="f.submitted && !name.valid" class="help-block">Name is required</div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">Login</button>
+            <a [routerLink]="['/add']" class="btn btn-link">Register New</a>
+        </div>
+    </form>
+</div>
